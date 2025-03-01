@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Movie Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie Explorer is a React-based web application that allows users to search and browse movies using an API. The app features a responsive UI, search functionality, and dynamic movie listings.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🔍 **Search Movies**: Users can search for movies by title.
+- 🎬 **Latest Movies**: Displays the latest trending movies.
+- 📄 **Movie Details**: Click on a movie to view more details.
+- 📡 **API Integration**: Fetches data from an external movie database API.
+- 🎨 **Responsive Design**: Built with Material-UI for a modern UI experience.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, Material-UI
+- **State Management**: Context API
+- **API Requests**: Fetch API / Axios
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Follow these steps to set up and run the project locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/movie-explorer.git
+   cd movie-explorer
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm start
+   ```
+4. Open the app in your browser:
+   ```
+   http://localhost:3000
+   ```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Use the search bar to find movies.
+- Browse the latest movies displayed on the homepage.
+- Click on a movie card to view its details.
+- Load more movies by clicking the "Load More" button.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+/movie-explorer
+├── src
+│   ├── components      # Reusable UI components
+│   ├── context         # Context API for state management
+│   ├── pages           # Application pages
+│   ├── services        # API calls
+│   ├── App.js          # Main application component
+│   ├── index.js        # Entry point
+│   ├── styles.css      # Global styles
+├── public
+│   ├── index.html      # Main HTML file
+├── package.json        # Project dependencies and scripts
+└── README.md           # Project documentation
+```
 
-### `npm run eject`
+## API Configuration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project uses an external movie API. Ensure you have an API key and update the `api.js` file:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```js
+const API_KEY = 'your-api-key';
+const BASE_URL = 'https://www.omdbapi.com/';
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To deploy the app, you can use:
 
-## Learn More
+- **Vercel**: `vercel deploy`
+- **Netlify**: Connect the repository and deploy.
+- **GitHub Pages**: Use `gh-pages` for deployment.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the MIT License.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Developed by [Vasudev Jaiswal](https://github.com/your-github)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
